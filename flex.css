@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
+
+:root {
+  --div-background-color: gray;
+  --text-color: black;
+  --div-padding: 10px;
+  --div-margin: 10px;
+  --justify-content-first: "";
+  --justify-content-second: "";
+  --align-items-second: "";
+  --align-content-third: "";
+  --align-items-third: "";
+}
+
+body {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 125px;
+  margin-bottom: -50px;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.sticky-header {
+  background: rgba(233, 99, 37, 0.9);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  box-shadow: 5px 10px 8px #363636;
+}
+
+.panel {
+  z-index: 99;
+  background-color: rebeccapurple;
+  height: 800px;
+  margin: 100px 50px 100px 50px;
+  border-radius: 20px;
+  box-shadow: 5px 10px 8px #363636;
+}
+
+.panel-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 60px;
+  border-radius: 20px 20px 0 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+button {
+  margin-left: 15px;
+  padding: 10px 20px 10px 20px;
+  font-family: "Potta One", cursive;
+
+  color: coral;
+  border: 2px solid black;
+  background-color: rgba(102, 51, 153, 0.116);
+
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.4); /* Green */
+}
+
+.container {
+  background-color: black;
+  margin: 10px;
+  border-radius: 20px;
+  max-height: 300px;
+  display: flex;
+  justify-content: var(--justify-content-first);
+}
+
+.container.second {
+  justify-content: var(--justify-content-second);
+  align-items: var(--align-items-second);
+}
+
+.container.third {
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 800px;
+  align-content: var(--align-content-third);
+  align-items: var(--align-items-third);
+}
+
+.item {
+  background-color: coral;
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+  border-radius: 15px;
+
+  font-family: "Potta One", cursive;
+  font-size: 30px;
+  line-height: 80px;
+  text-align: center;
+  vertical-align: center;
+}
+
+.title {
+  font-family: "Potta One", cursive;
+  font-size: 30px;
+  line-height: 80px;
+  text-align: center;
+  vertical-align: center;
+}
+
+.text {
+  margin: 10px;
+  font-family: "Potta One", cursive;
+  font-size: 20px;
+  color: white;
+}
